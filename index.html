@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบลูกบ้าน - CHAROEN KRUNG CONDOMINIUM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body { font-family: 'Prompt', sans-serif; background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="text-gray-800 flex flex-col min-h-screen">
+
+    <nav class="bg-blue-900 shadow-md sticky top-0 z-50 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class='bx bxs-building-house text-2xl text-blue-300'></i>
+                    <span class="font-bold text-lg hidden md:block">CHAROEN KRUNG CONDO</span>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-blue-200">ห้อง 88/123 (ชั้น 12)</div>
+                        <div class="text-xs text-gray-300">คุณสมชาย ใจดี</div>
+                    </div>
+                    <div class="h-10 w-10 bg-white text-blue-900 rounded-full flex items-center justify-center font-bold text-xl shadow-inner">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <button class="ml-2 text-gray-300 hover:text-white transition" title="ออกจากระบบ">
+                        <i class='bx bx-log-out text-2xl'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <div class="mb-8">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">แดชบอร์ดส่วนตัว</h1>
+            <p class="text-gray-500 mt-1">อัพเดทข้อมูลล่าสุดเมื่อ: 2 มี.ค. 2569 | 10:30 น.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            
+            <div class="bg-white rounded-xl shadow-sm p-6 border-l-4 border-blue-500 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <p class="text-sm text-gray-500 font-medium">พัสดุรอรับ</p>
+                        <h3 class="text-3xl font-bold text-gray-800 mt-1">2 <span class="text-sm font-normal text-gray-500">รายการ</span></h3>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                        <i class='bx bx-package text-2xl'></i>
+                    </div>
+                </div>
+                <button class="w-full bg-blue-50 hover:bg-blue-100 text-blue-700 font-medium py-2 rounded-lg text-sm transition flex items-center justify-center gap-2">
+                    <i class='bx bx-qr-scan'></i> สร้าง QR Code รับของ
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm p-6 border-l-4 border-red-500 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <p class="text-sm text-gray-500 font-medium">ค่าน้ำประปา / ส่วนกลาง</p>
+                        <h3 class="text-2xl font-bold text-red-600 mt-1">450 <span class="text-sm font-normal text-gray-500">บาท</span></h3>
+                    </div>
+                    <div class="bg-red-100 p-3 rounded-lg text-red-600">
+                        <i class='bx bx-receipt text-2xl'></i>
+                    </div>
+                </div>
+                <button class="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-2 rounded-lg text-sm transition flex items-center justify-center gap-2">
+                    <i class='bx bx-upload'></i> แจ้งชำระเงิน
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm p-6 border-l-4 border-yellow-500 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <p class="text-sm text-gray-500 font-medium">สถานะแจ้งซ่อมล่าสุด</p>
+                        <h3 class="text-lg font-bold text-gray-800 mt-1">แอร์โถงทางเดินน้ำหยด</h3>
+                        <span class="inline-block mt-1 px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded">กำลังดำเนินการ</span>
+                    </div>
+                    <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600">
+                        <i class='bx bx-wrench text-2xl'></i>
+                    </div>
+                </div>
+                <button class="w-full bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-2 rounded-lg text-sm transition border border-gray-200">
+                    ดูประวัติการแจ้งซ่อม
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm p-6 border-l-4 border-green-500 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <p class="text-sm text-gray-500 font-medium">สิทธิ์ที่จอดรถ (1 คัน)</p>
+                        <h3 class="text-xl font-bold text-gray-800 mt-1">กท 9999</h3>
+                        <p class="text-xs text-gray-500 mt-1">Honda Civic - สีขาว</p>
+                    </div>
+                    <div class="bg-green-100 p-3 rounded-lg text-green-600">
+                        <i class='bx bx-car text-2xl'></i>
+                    </div>
+                </div>
+                <div class="w-full bg-green-50 text-green-700 font-medium py-2 rounded-lg text-sm text-center">
+                    <i class='bx bx-check-circle'></i> สถานะ: ปกติ
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="text-xl font-bold text-gray-800 mb-4">บริการนิติบุคคล</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-center group">
+                <div class="bg-blue-50 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class='bx bx-message-square-edit text-2xl text-blue-600 group-hover:text-white'></i>
+                </div>
+                <span class="text-sm font-medium text-gray-700">แจ้งซ่อมส่วนกลาง</span>
+            </a>
+            
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-center group">
+                <div class="bg-blue-50 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class='bx bx-folder-open text-2xl text-blue-600 group-hover:text-white'></i>
+                </div>
+                <span class="text-sm font-medium text-gray-700">ดาวน์โหลดเอกสาร</span>
+            </a>
+
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-center group">
+                <div class="bg-blue-50 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class='bx bx-calendar-event text-2xl text-blue-600 group-hover:text-white'></i>
+                </div>
+                <span class="text-sm font-medium text-gray-700">จองส่วนกลาง (สระ/ฟิตเนส)</span>
+            </a>
+
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-center group">
+                <div class="bg-blue-50 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i class='bx bx-message-dots text-2xl text-blue-600 group-hover:text-white'></i>
+                </div>
+                <span class="text-sm font-medium text-gray-700">ติดต่อ / ร้องเรียน</span>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
